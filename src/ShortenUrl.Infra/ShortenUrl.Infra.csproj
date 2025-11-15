@@ -10,4 +10,8 @@
       <ProjectReference Include="..\ShortenUrl.Domain\ShortenUrl.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Repositories\" />
+    </ItemGroup>
+
 </Project>
