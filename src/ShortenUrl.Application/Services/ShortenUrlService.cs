@@ -1,17 +1,23 @@
+using ShortenUrl.Application.Utils;
 using ShortenUrl.Domain.Services;
 
 namespace ShortenUrl.Application.Services;
 
-public class ShortenUrlService : IShortenUrlService
+public class ShortenUrlService(
+    ISequenceGenerator sequenceGenerator) : IShortenUrlService
 {
-    public string Shorten(string originalUrl)
+    
+    public async Task<string> Shorten(string originalUrl)
     {
-        // Placeholder implementation
-        return "abc123";
+        var id = await sequenceGenerator.GetNextIdAsync();
+        var shortCode = EncodeBase62.Encode(id);
+     
+        // Configurar banco de dados e salvar o mapeamento entre shortCode e originalUrl
+        return shortCode;
     }
 
-    public string GetOriginalUrl(string shortCode)
+    public async Task<string> GetOriginalUrl(string shortCode)
     {
-        throw new NotImplementedException();
+        return string.Empty;
     }
 }

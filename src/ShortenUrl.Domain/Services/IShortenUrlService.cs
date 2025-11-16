@@ -2,6 +2,6 @@ namespace ShortenUrl.Domain.Services;
 
 public interface IShortenUrlService
 {
-    public string Shorten(string originalUrl);
-    public string GetOriginalUrl(string shortCode);
+    Task<string> Shorten(string originalUrl);
+    Task<string> GetOriginalUrl(string shortCode);
 }
