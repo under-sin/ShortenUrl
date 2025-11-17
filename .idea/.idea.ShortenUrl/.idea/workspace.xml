@@ -10,7 +10,10 @@
   <component name="ChangeListManager">
     <list default="true" id="83b18aa5-66dc-4c17-b173-fd502aa4774c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Infra/ShortenUrl.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/ShortenUrl.Infra.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;under-sin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:under-sin/ShortenUrl.git&quot;,
+    &quot;accountId&quot;: &quot;cc2188e2-c7fa-489d-bbb2-5b31eb7a15b5&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Application/DependencyInjectionExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -129,7 +144,9 @@
       <workItem from="1763264528983" duration="192000" />
       <workItem from="1763294001805" duration="17416000" />
       <workItem from="1763333208948" duration="197000" />
-      <workItem from="1763337345945" duration="1792000" />
+      <workItem from="1763337345945" duration="3215000" />
+      <workItem from="1763377265311" duration="547000" />
+      <workItem from="1763378562302" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial application structure with dependency injection and URL shortening service">
       <option name="closed" value="true" />
@@ -192,10 +209,10 @@
           <line>10</line>
           <properties documentPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" containingFunctionPresentation="Method 'Shorten'">
             <startOffsets>
-              <option value="279" />
+              <option value="284" />
             </startOffsets>
             <endOffsets>
-              <option value="280" />
+              <option value="285" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

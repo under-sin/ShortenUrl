@@ -7,7 +7,7 @@ public class ShortenUrlService(
     ISequenceGenerator sequenceGenerator) : IShortenUrlService
 {
     
-    public async Task<string> Shorten(string originalUrl)
+    public async Task<string> ShortenAsync(string originalUrl)
     {
         var id = await sequenceGenerator.GetNextIdAsync();
         var shortCode = EncodeBase62.Encode(id);
@@ -16,7 +16,7 @@ public class ShortenUrlService(
         return shortCode;
     }
 
-    public async Task<string> GetOriginalUrl(string shortCode)
+    public async Task<string> GetOriginalUrlAsync(string shortCode)
     {
         return string.Empty;
     }
