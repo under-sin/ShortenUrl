@@ -1,23 +1,41 @@
 using ShortenUrl.Application.Utils;
+using ShortenUrl.Domain.Entities;
+using ShortenUrl.Domain.Repositories;
 using ShortenUrl.Domain.Services;
 
 namespace ShortenUrl.Application.Services;
 
 public class ShortenUrlService(
-    ISequenceGenerator sequenceGenerator) : IShortenUrlService
+    ISequenceGenerator sequenceGenerator,
+    IUrlsRepository repository) : IShortenUrlService
 {
     
-    public async Task<string> ShortenAsync(string originalUrl)
+    public async Task<string> ShortenAsync(string originalUrl, CancellationToken ct)
     {
         var id = await sequenceGenerator.GetNextIdAsync();
         var shortCode = EncodeBase62.Encode(id);
-     
-        // Configurar banco de dados e salvar o mapeamento entre shortCode e originalUrl
+
+        var urlEntity = new Url(shortCode, originalUrl);
+        
+        try
+        {
+            await repository.AddUrlAsync(urlEntity, ct);
+        }
+        catch (Exception e)
+        {
+            // configurar o global handler exception
+            throw new Exception(e.Message);
+        }
+        
         return shortCode;
     }
 
-    public async Task<string> GetOriginalUrlAsync(string shortCode)
+    public async Task<string?> GetOriginalUrlAsync(string shortCode, CancellationToken ct)
     {
+        var urlEntity =  await repository.GetUrlByShortCodeAsync(shortCode, ct);
+        if (urlEntity != null)
+            return urlEntity.OriginalUrl;
+        
         return string.Empty;
     }
 }

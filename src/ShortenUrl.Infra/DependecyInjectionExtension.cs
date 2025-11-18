@@ -3,8 +3,10 @@ using FluentMigrator.Runner;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ShortenUrl.Domain.Repositories;
 using ShortenUrl.Domain.Services;
 using ShortenUrl.Infra.DataAccess;
+using ShortenUrl.Infra.DataAccess.Repositories;
 using ShortenUrl.Infra.Services;
 using StackExchange.Redis;
 
@@ -32,6 +34,13 @@ public static class DependecyInjectionExtension
         services.AddDbContext<ShortenUrlDbContext>(options 
             => options.UseMySql(connectionString, serverVersion));
     }
+    
+    private static void AddDependencies(IServiceCollection services)
+    {
+        services.AddScoped<IUrlsRepository, UrlsRepository>();
+        
+        services.AddScoped<ISequenceGenerator, SequenceGenerator>();
+    }
 
     private static void AddFluentMigrator(IServiceCollection services, IConfiguration configuration)
     {
@@ -43,18 +52,13 @@ public static class DependecyInjectionExtension
             .ScanIn(Assembly.Load("ShortenUrl.Infra")).For.All()
         ).AddLogging(x => x.AddFluentMigratorConsole());
     }
-    
-    private static void AddDependencies(IServiceCollection services)
-    {
-        services.AddScoped<ISequenceGenerator, SequenceGenerator>();
-    }
-    
+
     private static void AddRedis(
-        IServiceCollection services, 
+        IServiceCollection services,
         IConfiguration configuration)
     {
         var redisConnectionString = configuration.GetConnectionString("Redis");
-        
+
         services.AddSingleton<IConnectionMultiplexer>(sp =>
         {
             return ConnectionMultiplexer.Connect(redisConnectionString!);

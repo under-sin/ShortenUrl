@@ -1,5 +1,6 @@
 using ShortenUrl.Application;
 using ShortenUrl.Infra;
+using ShortenUrl.Infra.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,4 +25,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+MigrateDatabase();
+
 app.Run();
+
+void MigrateDatabase()
+{   
+    var connectionString = builder.Configuration.GetConnectionString("Connection");
+    
+    DatabaseMigration.Migrate(connectionString!, builder.Services);
+}

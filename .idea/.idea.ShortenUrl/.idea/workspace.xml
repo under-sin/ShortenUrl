@@ -9,10 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b18aa5-66dc-4c17-b173-fd502aa4774c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Repositories/IUrlsRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/DataAccess/Repositories/UrlsRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/0001_CreateUrlTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/DatabaseMigration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/Entities/Url.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Entities/Url.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/ShortenUrl.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/ShortenUrl.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Infra/DependecyInjectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/DependecyInjectionExtension.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Infra/ShortenUrl.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/ShortenUrl.Infra.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,18 +49,27 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Application/DependencyInjectionExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Application/Utils/EncodeBase62.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Domain/Entities/Url.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Domain/Repositories/IUrlsRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Domain/Services/ISequenceGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/DataAccess/Repositories/UrlsRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/DataAccess/ShortenUrlDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/DependecyInjectionExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/0001_CreateUrlTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/DatabaseMigration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Services/SequenceGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/34795f386d75b5a2f343dbbc9721a7f90acb1b01aea9ca0f7c770d871a0a4/ConfigurationOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/347bff1849d7b97359342c40541ad1791eb2f169dd778cad825364a5e9a5807e/StringBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/38fdc89984f3b9f4cd897bdb7b92388a887627ed695d995389d8e6b1bb11c/ServerSession.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/44cad551704bc7dae78cc7717b8b9f9313582aa8e67a6585a69de0cc33b4b8/IServiceCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/485da50d43321b81edc28153271bdedb84943a243743e2deaa67a981587968/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5890bea1acfbf3fed68846cf88de417726aefd9611192c0103fe2da89fa41/ConfigurationBinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e55091278ef2c81cfeec93caf9f36ab9c2825b839372ae7e7c043502f73a23a/Int64.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -146,7 +165,10 @@
       <workItem from="1763333208948" duration="197000" />
       <workItem from="1763337345945" duration="3215000" />
       <workItem from="1763377265311" duration="547000" />
-      <workItem from="1763378562302" duration="638000" />
+      <workItem from="1763378562302" duration="3127000" />
+      <workItem from="1763414000509" duration="357000" />
+      <workItem from="1763428220727" duration="2615000" />
+      <workItem from="1763463399906" duration="3799000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial application structure with dependency injection and URL shortening service">
       <option name="closed" value="true" />
@@ -206,13 +228,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs</url>
-          <line>10</line>
+          <line>13</line>
           <properties documentPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" containingFunctionPresentation="Method 'Shorten'">
             <startOffsets>
-              <option value="284" />
+              <option value="410" />
             </startOffsets>
             <endOffsets>
-              <option value="285" />
+              <option value="411" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
