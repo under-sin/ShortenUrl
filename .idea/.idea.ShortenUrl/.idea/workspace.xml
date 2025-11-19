@@ -9,21 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b18aa5-66dc-4c17-b173-fd502aa4774c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Repositories/IUrlsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/DataAccess/Repositories/UrlsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/0001_CreateUrlTable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/DatabaseMigration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/REFACTORING_SUMMARY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/IntegrationTestWebAppFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/ShortenUrlControllerIntegrationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortenUrl.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ShortenUrl.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/Entities/Url.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Entities/Url.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/Services/IShortenUrlService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Domain/ShortenUrl.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Domain/ShortenUrl.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Infra/DependecyInjectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/DependecyInjectionExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Infra/ShortenUrl.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Infra/ShortenUrl.Infra.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +59,9 @@
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/0001_CreateUrlTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Migrations/DatabaseMigration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Services/SequenceGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/IntegrationTestWebAppFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/ShortenUrlControllerIntegrationTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/ShortenUrl.Tests/appsettings.Testing.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/34795f386d75b5a2f343dbbc9721a7f90acb1b01aea9ca0f7c770d871a0a4/ConfigurationOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/347bff1849d7b97359342c40541ad1791eb2f169dd778cad825364a5e9a5807e/StringBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/38fdc89984f3b9f4cd897bdb7b92388a887627ed695d995389d8e6b1bb11c/ServerSession.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,7 +100,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -168,7 +167,11 @@
       <workItem from="1763378562302" duration="3127000" />
       <workItem from="1763414000509" duration="357000" />
       <workItem from="1763428220727" duration="2615000" />
-      <workItem from="1763463399906" duration="3799000" />
+      <workItem from="1763463399906" duration="4144000" />
+      <workItem from="1763499701893" duration="38000" />
+      <workItem from="1763507764412" duration="647000" />
+      <workItem from="1763512993604" duration="136000" />
+      <workItem from="1763513143049" duration="2275000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial application structure with dependency injection and URL shortening service">
       <option name="closed" value="true" />
@@ -186,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763321767736</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Repository and migration configs">
+      <option name="closed" value="true" />
+      <created>1763467290135</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763467290135</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +220,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add initial application structure with dependency injection and URL shortening service" />
     <MESSAGE value="Adding shorten url logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding shorten url logic" />
+    <MESSAGE value="Repository and migration configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository and migration configs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -226,19 +238,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" containingFunctionPresentation="Method 'Shorten'">
-            <startOffsets>
-              <option value="410" />
-            </startOffsets>
-            <endOffsets>
-              <option value="411" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

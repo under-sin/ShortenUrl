@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortenUrl.API", "src\ShortenUrl.API\ShortenUrl.API.csproj", "{C433D216-1CDB-4CDE-BFFF-5EAAFBB41E08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortenUrl.Application", "src\ShortenUrl.Application\ShortenUrl.Application.csproj", "{557C7829-76C0-4DAA-9DFF-8E503D94C379}"
@@ -11,8 +12,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5ECBE304-B13B-4E81-82D5-0961786E4B26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F083ECF1-2553-437B-9153-1D95F2038F2C}"
+	ProjectSection(SolutionItems) = preProject
+		test\CHANGELOG.md = test\CHANGELOG.md
+		test\REFACTORING_SUMMARY.md = test\REFACTORING_SUMMARY.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{77E3124A-25D3-49C8-A234-34A076A89DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortenUrl.Tests", "test\ShortenUrl.Tests\ShortenUrl.Tests.csproj", "{EC0A570F-DF2A-4E92-AD51-92271C4A0BBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +43,10 @@ Global
 		{0D2AEECB-2F4A-4D7C-B9AA-66F13867F040}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D2AEECB-2F4A-4D7C-B9AA-66F13867F040}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D2AEECB-2F4A-4D7C-B9AA-66F13867F040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0A570F-DF2A-4E92-AD51-92271C4A0BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0A570F-DF2A-4E92-AD51-92271C4A0BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0A570F-DF2A-4E92-AD51-92271C4A0BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0A570F-DF2A-4E92-AD51-92271C4A0BBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{77E3124A-25D3-49C8-A234-34A076A89DB4} = {5ECBE304-B13B-4E81-82D5-0961786E4B26}
@@ -43,5 +54,6 @@ Global
 		{557C7829-76C0-4DAA-9DFF-8E503D94C379} = {77E3124A-25D3-49C8-A234-34A076A89DB4}
 		{B397B6F2-0B20-4C65-B39F-11583E5D0C1C} = {77E3124A-25D3-49C8-A234-34A076A89DB4}
 		{0D2AEECB-2F4A-4D7C-B9AA-66F13867F040} = {77E3124A-25D3-49C8-A234-34A076A89DB4}
+		{EC0A570F-DF2A-4E92-AD51-92271C4A0BBF} = {F083ECF1-2553-437B-9153-1D95F2038F2C}
 	EndGlobalSection
 EndGlobal

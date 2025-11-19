@@ -25,7 +25,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-MigrateDatabase();
+// Não executa migrations em ambiente de testes
+if (!app.Environment.IsEnvironment("Testing"))
+{
+    MigrateDatabase();
+}
 
 app.Run();
 
@@ -35,3 +39,6 @@ void MigrateDatabase()
     
     DatabaseMigration.Migrate(connectionString!, builder.Services);
 }
+
+// Torna a classe Program acessível para testes de integração
+public partial class Program { }
