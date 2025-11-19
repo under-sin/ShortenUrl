@@ -1,5 +1,6 @@
 using ShortenUrl.Application.Utils;
 using ShortenUrl.Domain.Entities;
+using ShortenUrl.Domain.Exceptions;
 using ShortenUrl.Domain.Repositories;
 using ShortenUrl.Domain.Services;
 
@@ -12,20 +13,14 @@ public class ShortenUrlService(
 
     public async Task<string> ShortenAsync(string originalUrl, CancellationToken ct)
     {
+        UrlValidator.Validate(originalUrl);
+        
         var id = await sequenceGenerator.GetNextIdAsync();
         var shortCode = EncodeBase62.Encode(id);
 
         var urlEntity = new Url(shortCode, originalUrl);
 
-        try
-        {
-            await repository.AddUrlAsync(urlEntity, ct);
-        }
-        catch (Exception e)
-        {
-            // configurar o global handler exception
-            throw new Exception(e.Message);
-        }
+        await repository.AddUrlAsync(urlEntity, ct);
 
         return shortCode;
     }
@@ -36,6 +31,9 @@ public class ShortenUrlService(
             return null;
 
         var urlEntity = await repository.GetUrlByShortCodeAsync(shortCode, ct);
+
+        if (urlEntity?.OriginalUrl != null)
+            UrlValidator.Validate(urlEntity.OriginalUrl);
         
         return urlEntity?.OriginalUrl;
     }

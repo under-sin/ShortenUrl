@@ -19,7 +19,7 @@ public class ShortenUrlController(IShortenUrlService service) : ControllerBase
     }
 
     [HttpGet("{shortCode}")]
-    [ProducesResponseType(StatusCodes.Status302Found)]
+    [ProducesResponseType(StatusCodes.Status301MovedPermanently)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> RedirectToOriginalUrlAsync(string shortCode, CancellationToken ct)
     {
@@ -28,6 +28,6 @@ public class ShortenUrlController(IShortenUrlService service) : ControllerBase
         if (string.IsNullOrEmpty(originalUrl))
             return NotFound("URL not found");
         
-        return Redirect(originalUrl);
+        return RedirectPermanent(originalUrl);
     }
 }

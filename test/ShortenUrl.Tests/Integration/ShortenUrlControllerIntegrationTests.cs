@@ -89,7 +89,7 @@ public class ShortenUrlControllerIntegrationTests : IClassFixture<IntegrationTes
         var response = await clientWithoutRedirect.GetAsync($"/v1/ShortenUrl/{shortenResult!.ShortUrl}");
 
         // Assert
-        response.StatusCode.ShouldBe(HttpStatusCode.Redirect);
+        response.StatusCode.ShouldBe(HttpStatusCode.MovedPermanently);
         response.Headers.Location.ShouldNotBeNull();
         response.Headers.Location.ToString().ShouldBe(originalUrl);
     }
@@ -156,7 +156,7 @@ public class ShortenUrlControllerIntegrationTests : IClassFixture<IntegrationTes
         var redirectResponse = await clientWithoutRedirect.GetAsync($"/v1/ShortenUrl/{shortCode}");
 
         // Assert
-        redirectResponse.StatusCode.ShouldBe(HttpStatusCode.Redirect);
+        redirectResponse.StatusCode.ShouldBe(HttpStatusCode.MovedPermanently);
         redirectResponse.Headers.Location.ShouldNotBeNull();
         redirectResponse.Headers.Location.ToString().ShouldBe(originalUrl);
     }

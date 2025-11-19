@@ -9,17 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b18aa5-66dc-4c17-b173-fd502aa4774c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/REFACTORING_SUMMARY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/IntegrationTestWebAppFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/ShortenUrlControllerIntegrationTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShortenUrl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShortenUrl.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ShortenUrl.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ShortenUrl.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Controllers/ShortenUrlController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.API/Requests/ShortenRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortenUrl.Application/Services/ShortenUrlService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/ShortenUrlControllerIntegrationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/ShortenUrlControllerIntegrationTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,6 @@
     <setting file="file://$PROJECT_DIR$/src/ShortenUrl.Infra/Services/SequenceGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/IntegrationTestWebAppFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/ShortenUrl.Tests/Integration/ShortenUrlControllerIntegrationTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/ShortenUrl.Tests/appsettings.Testing.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/34795f386d75b5a2f343dbbc9721a7f90acb1b01aea9ca0f7c770d871a0a4/ConfigurationOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/347bff1849d7b97359342c40541ad1791eb2f169dd778cad825364a5e9a5807e/StringBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/38fdc89984f3b9f4cd897bdb7b92388a887627ed695d995389d8e6b1bb11c/ServerSession.cs" root0="FORCE_HIGHLIGHTING" />
@@ -86,30 +79,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ShortenUrl.API: http.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ShortenUrl.API: http.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;,
-      &quot;yaml&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "yaml"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ShortenUrl.API: http">
     <configuration name="ShortenUrl.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/ShortenUrl.API/ShortenUrl.API.csproj" />
@@ -171,7 +164,11 @@
       <workItem from="1763499701893" duration="38000" />
       <workItem from="1763507764412" duration="647000" />
       <workItem from="1763512993604" duration="136000" />
-      <workItem from="1763513143049" duration="2275000" />
+      <workItem from="1763513143049" duration="2378000" />
+      <workItem from="1763515538891" duration="17000" />
+      <workItem from="1763520489292" duration="115000" />
+      <workItem from="1763521460061" duration="88000" />
+      <workItem from="1763551807604" duration="2468000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial application structure with dependency injection and URL shortening service">
       <option name="closed" value="true" />
@@ -197,7 +194,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763467290135</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add changelog, refactor tests to use SQLite in-memory, and improve integration test setup">
+      <option name="closed" value="true" />
+      <created>1763515434806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763515434807</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add unit tests for ShortenUrlService and configuration for testing">
+      <option name="closed" value="true" />
+      <created>1763515511582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1763515511582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +234,9 @@
     <MESSAGE value="Add initial application structure with dependency injection and URL shortening service" />
     <MESSAGE value="Adding shorten url logic" />
     <MESSAGE value="Repository and migration configs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repository and migration configs" />
+    <MESSAGE value="Add changelog, refactor tests to use SQLite in-memory, and improve integration test setup" />
+    <MESSAGE value="Add unit tests for ShortenUrlService and configuration for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests for ShortenUrlService and configuration for testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
